@@ -1,0 +1,150 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.slider_box{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: auto;
+    height: 45vh;
+    margin: 2vh auto;
+    border-radius: 10px;
+}
+.sinistra, .destra{
+    position: absolute;
+     z-index: 999;
+    width: auto;
+    height: 100%;
+    
+}
+.destra{
+    margin-right: 30%;
+}
+.sinistra{
+    margin-left: 30%;
+}
+.indietro i{
+  float: right;
+  
+}
+.indietro i:hover, .avanti i:hover{
+    color: lime;
+}
+.indietro i, .avanti i{
+    line-height: 45vh;
+    font-size: 3.5em;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.9);
+
+}
+.destra{
+    right: 0;
+}
+.centro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.centro img{
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: none;
+
+}
+.centro img.active{
+    display: block;
+    border-radius: 10px;
+}
+
+.box_circle{
+    display: flex;
+    justify-content: space-around;
+    bottom: 2vh;
+    padding: 0 1px;
+    position: absolute;
+    border-radius: 20px;
+    height: 5vh;
+    margin-left: 50%;
+    transform: translate(-50%);
+    
+    width: auto;
+    
+
+
+}
+.box_circle i{
+    line-height:  5vh;
+    padding: 0 2px;
+    color: rgba(250, 244, 244, 0.8);
+    font-size: 1em;
+
+}
+i.active{
+    color: rgb(37, 224, 84);
+}
+.box.active{
+    display: block;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .box_circle{
+        width: 30%;
+    }
+    .box_circle i{
+        font-size: 0.7em;
+        
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .box_circle{
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    .box_circle i{
+        font-size: 0.8em;
+        color: rgb(58, 58, 54);
+        
+        
+    }
+    i.active{
+        color: red;
+    }
+
+
+}
+
+
+
+.box{
+    margin: 0px auto;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0,0.1);
+    display: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+.box h1{
+    color: #3d3d3d;
+    padding: 10px;
+    letter-spacing: 1.5px;
+}
+.box a {
+    text-decoration: none;
+    background-color: rgb(58, 57, 57);
+    color: rgb(190, 189, 236);
+    padding: 1px;
+}
+
+
